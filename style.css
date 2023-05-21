@@ -71,7 +71,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #fafafa;
+  background-color: #fff;
   outline: none;
 }
 *,
@@ -422,8 +422,9 @@ a {
   text-align: left;
 }
 .features .top-header h2 {
-  font-size: 32px;
+  font-size: 38px;
   margin-bottom: 10px;
+  color: var(--first-color);
 }
 .features .top-header p {
   width: 60%;
@@ -446,7 +447,7 @@ a {
 .features .boxs .box {
   background: var(--third-color);
   padding: 40px 27px;
-  box-shadow: 0 4px 6px 0 rgb(0 0 0 / 4%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 5px;
   height: 100%;
   text-align: left;
@@ -470,17 +471,17 @@ a {
 .history .features .boxs {
   grid-template-columns: repeat(3, 1fr);
 }
+.history .features .boxs.boxy {
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+}
 .history .features .boxs .box  {
   height: 100%;
 }
 .features .customers {
-  display: grid;
-  grid-auto-columns: 1fr;
+  display: flex;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -509,6 +510,7 @@ a {
     font-size: 22px;
   }
   .features .customers {
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
   .features .top-header p {
@@ -519,9 +521,6 @@ a {
   }
   .features {
     padding: 20px 0;
-  }
-  .features .top-header h2 {
-    font-size: 26px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -539,15 +538,16 @@ a {
 }
 .history .histy {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 5fr 4fr;
   grid-gap: 20px;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
 }
 .history .histy h2 {
-  font-size: 32px;
+  font-size: 38px;
   padding-bottom: 15px;
+  color: var(--first-color);
 }
 .history .histy h4 {
   font-size: 20px;
@@ -562,9 +562,15 @@ a {
   font-family: "Maurea-BoldLf";
   margin-top: 5px;
 }
+.history .histy .his-img {
+  width: 100%;
+  height: 100%;
+  
+}
 .history .histy .his-img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .history .histy ul {
   margin: 0;
@@ -860,6 +866,10 @@ input[type="number"] {
   .formbox {
     width: 100%;
   }
+  .features .top-header h2,
+  .history .histy h2 {
+    font-size: 26px;
+  }
 }
 @media screen and (max-width: 480px) {
   .pop-form .pop-content .combin {
@@ -1087,13 +1097,14 @@ input[type="number"] {
   direction: rtl;
   font-family: "GE-Dinar-One-Bold" !important;
 }
-.nav .info .ara a, .ar .req {
+.nav .info .ara a, .ar .req, .thankYou.ar .details .side-info .info h1  {
   font-family: "GE-Dinar-One-Bold" !important;
 }
 .ar .nav .info a, .houry {
   font-family: "Maurea-BoldLf";
 }
-.ar .features .boxs .box p, .ar .features .top-header p {
+.ar .features .boxs .box p, .ar .features .top-header p,
+.ar .history .histy .his-info p, .thankYou.ar .details .side-info h3 {
   font-family: "GE-Dinar-One-Medium" !important;
 }
 .ar .nav .info {
