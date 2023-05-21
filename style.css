@@ -797,6 +797,10 @@ a {
   transition: border-color 300ms ease, border-color 300ms ease;
   outline: none;
 }
+.side-form .pop-content .form-groups select,
+.side-form .pop-content .form-groups select option {
+  font-family: "Maurea-Medium";
+}
 .pop-form .pop-content .input-box input:hover {
   border-color: #959595;
   color: #0a0a0a;
@@ -1097,7 +1101,8 @@ input[type="number"] {
   direction: rtl;
   font-family: "GE-Dinar-One-Bold" !important;
 }
-.nav .info .ara a, .ar .req, .thankYou.ar .details .side-info .info h1  {
+.nav .info .ara a, .ar .req, .thankYou.ar .details .side-info .info h1, .ar .side-form .pop-content .form-groups select,
+.ar .side-form .pop-content .form-groups select option  {
   font-family: "GE-Dinar-One-Bold" !important;
 }
 .ar .nav .info a, .houry {
