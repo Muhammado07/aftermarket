@@ -281,9 +281,12 @@ a {
 .chiller .details .side-info .info p {
   font-size: 22px;
   line-height: 1.7;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-top: 20px;
   color: var(--third-color);
+}
+.chiller .details .side-info .info p.secn {
+  margin-top: 0;
 }
 .chiller .details .side-info .info p.seconddy {
   margin-top: 10px;
@@ -453,20 +456,16 @@ a {
   text-align: left;
 }
 .features .boxs .box h3 {
-  font-size: 18px;
+  font-size: 16px;
 }
 .features .boxs .box img {
   width: 55px;
   height: 55px;
   margin-bottom: 15px;
 }
-.features .boxs .box p {
-  font-size: 16px;
-  margin-top: 10px;
-  font-family: "Maurea-Light";
-}
 .history .features {
   padding-top: 0;
+  padding-bottom: 0;
 }
 .history .features .boxs {
   grid-template-columns: repeat(3, 1fr);
@@ -475,16 +474,24 @@ a {
   grid-template-columns: 1fr;
   margin-top: 20px;
 }
+.history .features .boxs .boxyy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
 .history .features .boxs .box  {
   height: 100%;
 }
 .features .customers {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   text-align: center;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .features .customers .customer,
 .features .customers .customer img {
@@ -496,7 +503,8 @@ a {
     padding: 50px 0 0;
   } */
   .features .boxs,
-  .history .features .boxs {
+  .history .features .boxs,
+  .history .features .boxs .boxyy {
     grid-template-columns: 1fr;
   }
   .features h2 {
@@ -507,7 +515,10 @@ a {
     margin: auto;
   }
   .features .boxs .box h3 {
-    font-size: 22px;
+    font-size: 16px;
+  }
+  .history .histy .his-info p {
+    font-size: 14px;
   }
   .features .customers {
     display: grid;
@@ -550,7 +561,7 @@ a {
   color: var(--first-color);
 }
 .history .histy h4 {
-  font-size: 20px;
+  font-size: 22px;
   padding-bottom: 10px;
 }
 .history .histy .his-info p {
@@ -659,6 +670,12 @@ a {
   }
 }
 
+.features .boxs .box p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: "Maurea-Light";
+}
+
 /* ===========================
     ======== PROJECTS =========
     ============================ */
@@ -742,10 +759,11 @@ a {
   color: var(--third-color);
   text-align: center;
   margin-bottom: 20px;
+  font-size: 16px;
 }
 .side-form {
   background: rgba(255, 255, 255, 0.2);
-  padding: 50px 0;
+  padding: 50px 10px;
   width: 75%;
   margin: 0 auto;
   border-radius: 5px;
@@ -1140,5 +1158,60 @@ input[type="number"] {
   }
   .ar .chiller .details .side-info .more {
     align-items: baseline;
+  }
+}
+
+.customers .custom {
+  position: relative;
+}
+.customers  .image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.customers .custom p {
+  font-size: 16px;
+  padding-top: 15px;
+}
+.customers .custom .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+}
+
+.customers .custom:hover .overlay {
+  opacity: 1;
+}
+
+.customers .text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  padding-right: 0;
+}
+.customers .text ul li {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 991px) {
+  .customers .custom p,
+  .customers .text {
+    font-size: 11px;
   }
 }
