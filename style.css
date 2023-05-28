@@ -486,7 +486,7 @@ a {
 }
 .features .customers {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   text-align: center;
@@ -563,6 +563,11 @@ a {
 .history .histy h4 {
   font-size: 22px;
   padding-bottom: 10px;
+}
+.history .histy .features h4 {
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 .history .histy .his-info p {
   font-size: 18px;
@@ -1179,8 +1184,10 @@ input[type="number"] {
   text-align: left;
 }
 .customers .custom span {
+  font-family: "Maurea-Medium";
   color: var(--first-color);
   text-align: left;
+  font-size: 14px;
 
 }
 .customers .custom .overlay {
@@ -1217,6 +1224,7 @@ input[type="number"] {
 }
 .customers .text ul li {
   margin-bottom: 5px;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 991px) {
@@ -1225,3 +1233,6 @@ input[type="number"] {
     font-size: 11px;
   }
 }
+
+
+
