@@ -472,7 +472,10 @@ a {
 }
 .history .features .boxs.boxy {
   grid-template-columns: 1fr;
-  margin-top: 20px;
+  margin-top: 5px;
+}
+.history .features .boxs {
+  grid-row-gap: 10px;
 }
 .history .features .boxs .boxyy {
   display: grid;
@@ -481,8 +484,13 @@ a {
   justify-content: center;
   align-items: center;
 }
-.history .features .boxs .box  {
+.history .features .boxs .box {
+  background: #FEFEFE !important;
+  padding: 5px;
+  border-radius: 5px;
   height: 100%;
+  text-align: left;
+  box-shadow: none;
 }
 .features .customers {
   display: grid;
@@ -764,11 +772,12 @@ a {
   color: var(--third-color);
   text-align: center;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 22px;
+  padding: 0 60px;
 }
 .side-form {
   background: rgba(255, 255, 255, 0.2);
-  padding: 50px 10px;
+  padding: 50px 20px;
   width: 75%;
   margin: 0 auto;
   border-radius: 5px;
@@ -803,6 +812,7 @@ a {
 }
 .side-form .pop-content p {
   color: var(--third-color);
+  font-size: 14px;
 }
 .pop-form .pop-content .input-box input,
 .pop-form .pop-content .form-groups select,
@@ -886,6 +896,9 @@ input[type="number"] {
   .side-form {
     width: 100%;
     padding: 20px;
+  }
+  .pop-content .formbox-titles {
+    padding: 0;
   }
   .pop-form .pop-content .combin {
     grid-template-columns: 1fr;
