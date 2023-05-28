@@ -572,10 +572,16 @@ a {
   font-size: 22px;
   padding-bottom: 10px;
 }
+.history .histy .features .planned h4:first-child {
+  font-family: "Maurea-Light";
+}
 .history .histy .features h4 {
   font-size: 18px;
   padding-top: 20px;
   padding-bottom: 0;
+}
+.history .histy .features .planned h4:nth-child(2) {
+  padding-top: 10px;
 }
 .history .histy .his-info p {
   font-size: 18px;
