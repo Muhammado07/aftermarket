@@ -1184,8 +1184,8 @@ input[type="number"] {
   text-align: right;
 }
 .ar .customers .text {
-  padding-right: 10px;
-  padding-left: 0;
+  padding-right: 20px;
+  padding-left: 5px;
 }
 .ar .dropdown.on .dropdown-list,
 .ar .dropdown .dropdown-label {
@@ -1256,14 +1256,16 @@ input[type="number"] {
   transform: translate(-50%, -50%);
   text-align: left;
   width: 100%;
-  padding: 10px;
-  padding-right: 0;
+  padding: 20px;
+  padding-right: 5px;
 }
 .customers .text ul li {
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 14px;
 }
-
+.customers .text ul {
+  list-style: initial;
+}
 @media screen and (max-width: 991px) {
   .customers .custom p,
   .customers .text {
