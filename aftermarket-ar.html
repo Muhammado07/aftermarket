@@ -96,13 +96,15 @@
                     <input type="text" placeholder="Ali" required="">
                   </div>
                 </div>
-                <div class="input-box">
-                  <p>البريد الإلكتروني</p>
-                  <input type="email" placeholder="mohamed@jci.com" required="">
-                </div>
-                <div class="input-box">
-                  <p>الهاتف الجوال</p>
-                  <input type="number" placeholder="0123456789" required="">
+                <div class="combin">
+                  <div class="input-box">
+                    <p>البريد الإلكتروني</p>
+                    <input type="email" placeholder="mohamed@jci.com" required="">
+                  </div>
+                  <div class="input-box">
+                    <p>الهاتف الجوال</p>
+                    <input type="number" placeholder="0123456789" required="">
+                  </div>
                 </div>
                 <div class="combin">
                   <div class="form-groups">
@@ -117,9 +119,71 @@
                   <div class="form-groups">
                     <p>المدينة</p>
                     <select class="form-control" id="city">
-                      <option selected="selected" disabled="">المدينة*</option>
+                      <option selected="selected" disabled="">المدينة</option>
                     </select>
                   </div>
+                </div>
+                <div class="form-groups">
+                  <p>نوع وحدة التبريد (اختيارات متعددة)</p>
+                  <div class="dropdown" data-control="checkbox-dropdown">
+                    <label class="dropdown-label">Select</label>
+                    
+                    <div class="dropdown-list">
+                      <label class="dropdown-option">
+                        <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                        Air Cooled Chillers
+                      </label>
+                      
+                      <label class="dropdown-option">
+                        <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                        Water Cooled Chillers
+                      </label>
+                      
+                      <label class="dropdown-option">
+                        <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                        AHUs / FCUs
+                      </label>
+                      
+                      <label class="dropdown-option">
+                        <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                        Packaged Units
+                      </label>
+                      
+                      <label class="dropdown-option">
+                        <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                        Ducted Split Units
+                      </label>  
+                      <label class="dropdown-option">
+                        <input type="checkbox" name="dropdown-group" value="Selection 6" />
+                        Mini Split Units (Wall Mounted/ Free Stand/ Cassette Type)
+                      </label>      
+                    </div>
+                    </div>
+                </div>
+                <div class="form-groups">
+                  <p>العلامة التجارية للمعدة </p>
+                  <div>
+                    <select id="selector1" onchange="yesnoCheck1(this);">
+                      <option selected="selected" disabled="">
+                        العلامة التجارية للمعدة 
+                      </option>
+                      <option value="york">YORK</option>
+                      <option value="other">ماركات أخري (أذكرها) </option>
+                  </select>
+                  </div>
+              
+              <div id="otherOne1" style="display: none;">  
+                  <div class="form-groups down-tp">
+                    <div class="input-box">
+                      <p>أذكرها</p>
+                      <input
+                        type="text"
+                        placeholder="Please Specify"
+                        required
+                      />
+                    </div>
+                  </div>
+              </div>
                 </div>
                 <div class="form-groups">
                   <p>الوقت المفضل للاتصال؟</p>
@@ -151,12 +215,9 @@
           <div class="details">
             <div class="side-info">
               <div class="info">
-                <h1>
-                  خدمات ما بعد البيع
-  
-                </h1>
-                <p>خدمات صيانة ودعم مخصصة ورائِدة.
-                </p>
+              <h1>الدعم الإقليمي لخدمات ما بعد البيع - التهوية والتدفئة وتكييف الهواء</h1>
+                <p>خدمات مخصصة ورائدة في فئتها لدعم وصيانة معدات التهوية والتدفئة وتكييف الهواء /p>
+                <p class="secn">حافظ على تشغيل منشآتك 24/7</p>
               </div>
             </div>
             <div class="side-form">
@@ -174,13 +235,15 @@
                         <input type="text" placeholder="Ali" required="">
                       </div>
                     </div>
-                    <div class="input-box">
-                      <p>البريد الإلكتروني</p>
-                      <input type="email" placeholder="mohamed@jci.com" required="">
-                    </div>
-                    <div class="input-box">
-                      <p>الهاتف الجوال</p>
-                      <input type="number" placeholder="0123456789" required="">
+                    <div class="combin">
+                      <div class="input-box">
+                        <p>البريد الإلكتروني</p>
+                        <input type="email" placeholder="mohamed@jci.com" required="">
+                      </div>
+                      <div class="input-box">
+                        <p>الهاتف الجوال</p>
+                        <input type="number" placeholder="0123456789" required="">
+                      </div>
                     </div>
                     <div class="combin">
                       <div class="form-groups">
@@ -206,6 +269,68 @@
                           </option>
                         </select>
                       </div>
+                    </div>
+                    <div class="form-groups">
+                      <p>نوع وحدة التبريد (اختيارات متعددة)</p>
+                      <div class="dropdown" data-control="checkbox-dropdown">
+                        <label class="dropdown-label">Select</label>
+                        
+                        <div class="dropdown-list">
+                          <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                            Air Cooled Chillers
+                          </label>
+                          
+                          <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                            Water Cooled Chillers
+                          </label>
+                          
+                          <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                            AHUs / FCUs
+                          </label>
+                          
+                          <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                            Packaged Units
+                          </label>
+                          
+                          <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                            Ducted Split Units
+                          </label>  
+                          <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="Selection 6" />
+                            Mini Split Units (Wall Mounted/ Free Stand/ Cassette Type)
+                          </label>      
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-groups">
+                      <p>العلامة التجارية للمعدة </p>
+                      <div>
+                        <select id="selector" onchange="yesnoCheck(this);">
+                          <option selected="selected" disabled="">
+                            العلامة التجارية للمعدة 
+                          </option>
+                          <option value="york">YORK</option>
+                          <option value="other">ماركات أخري (أذكرها) </option>
+                      </select>
+                      </div>
+                  
+                  <div id="otherOne" style="display: none;">  
+                      <div class="form-groups down-tp">
+                        <div class="input-box">
+                          <p>أذكرها</p>
+                          <input
+                            type="text"
+                            placeholder="Please Specify"
+                            required
+                          />
+                        </div>
+                      </div>
+                  </div>
                     </div>
                     <div class="form-groups">
                       <p>الوقت المفضل للاتصال؟</p>
@@ -237,10 +362,11 @@
             <div class="histy">
               <div class="his-info">
                <div>
-                <h2>مجموعة كاملة من الخدمات والدعم
-                </h2>
-                <h4>خدمات تشغيل وصيانة التدفئة والتهوية وتكييف الهواء</h4>
-                <h4>حافظ على تشغيل منشآتك <span class="houry">24/7</span> !</h4>
+                <h2>اتفاقيات الخدمة المخططة</h2>
+                <h4>عمليات تشغيل وصيانة وإصلاح لأجهزة التهوية والتدفئة وتكييف الهواء</h4>
+              <p>
+                تم تصميم عقود التشغيل والصيانة الخاصة بنا بعناية لتحسين خدمة أحدث التقنيات المستخدمة لضمان التشغيل بكفاءة عالية. 
+              </p>
                 <p>
                   
   تم تصميم عقود التشغيل والصيانة الخاصة بنا بعناية لتحسّن من تقنيات الخدمة المحدثة لتضمن تأثير ايجابي على جوانب متعددة في التشغيل.
@@ -248,30 +374,27 @@
                 </p>
                </div>
                <div class="features">
+                <div class="planned">
+                  <h4>نقدم اتفاقيات خدمة الصيانة التالية: </h4>
+                </div>
                 <div>
                   <div class="boxs boxy">
                     <div class="box">
-                      <h3>عقد صيانة شامل.
-    
+                      <h3>1- عقود الصيانة الوقائية:
                       </h3>
-                      <p>يغطي العقد الشامل الصيانة الروتينية، الأعطال، العمالة، المواد ، والمواد الاستهلاكية.
-    
+                      <p>سيقدم لك فريقنا من الخبراء من الفنيين والمهندسين صيانة وقائية احترافية بشكل دوري لضمان إستقرار الأداء وتحسين جودة الهواء الداخلي وتوفير الطاقة والإستدامة.
                       </p>
                     </div>
                     <div class="box">
-                      <h3>عقد الصيانة الوقائية
-    
+                      <h3>2- عقود التشغيل والصيانة:
                       </h3>
-                      <p>يتم تنفيذ خدمات الصيانة الوقائية من قبل خبرائنا وفقًا لنطاق العقد.
-    
+                      <p>يتناوب فريقنا العمل على مدار الساعة لتشغيل النظام ومراقبته وتوفير الصيانة الوقائية لضمان التشغيل السليم وتقليل الأعطال وزيادة العمل الإفتراضي لمعداتك.
                       </p>
                     </div>
                     <div class="box">
-                      <h3>عقد التشغيل والصيانة
+                      <h3>3- عقود الصيانة الشاملة: 
                       </h3>
-                      <p>
-                        يتمركز موظفو التشغيل والصيانة لدينا في الموقع في نوبات عمل أو على مدار الساعة لتشغيل  سليم، وصيانة تقلل من الأعطال، ومتابعة لتضمن عمر طويل لمعداتك القيمة.
-                        
+                      <p>تم تخصيص نموذج العقد هذا لتغطية الصيانة الوقائية والتصحيحية، العمالة، قطع الغيار، والمواد الاستهلاكية.
                       </p>
                     </div>
                   </div>
@@ -293,40 +416,42 @@
       <div class="features">
         <div class="container">
           <div class="top-header">
-            <h2>نحن نحمي ونُدير جميع المرافق
-            </h2>
-          <p>
-            عروضنا الشاملة والمنفردة تُمكن جونسون كنترولز العربية من تصميم خدمات تجارية رائدة من فئتها على حسب الطلب
-            </p>
+            <h2>ندير ونحمي جميع المرافق</h2>
+            <h3>لماذا إتفاقيات الخدمة المتفق عليا؟</h3>
+          <p>من خلال مجموعتنا الشاملة و الفردية من العروض، يمكن لجونسون كنترولز العربية تصميم خدمات تجارية رائدة في فئتها وفقًا للمتطلبات والميزانيات المحددة.</p>
           </div>
           <div class="boxs">
+            
             <div class="box">
-              <img src="img/reduce-cost.png" alt="Reduce Future Repair Cost">
-              <h3>تقليل تكلفة الإصلاح المستقبلية
-              </h3>
-              <p>خدمات منتظمة لتحسين دقة المعدات وإطالة عمرها
-              </p>
+              <img src="img/reduce-cost.png" alt="Reduce Unplanned Repair Cost">
+              <h3>تقليل تكلفة الإصلاحات الغير مخطط لها</h3>
+              <p>تعمل الخدمة الثابتة على تحسين عمر المعدات وإعتماديتها.</p>
             </div>
             <div class="box">
-              <img src="img/up-time.png" alt="Maximize Up Time">
-              <h3>رفع الصلاحية
-              </h3>
-              <p>تقليل الأعطال الغير مجدولة وزيادة الإنتاجية
-              </p>
+              <img src="img/up-time.png" alt="Minimize Down Time ">
+              <h3>تقليل وقت التوقف</h3>
+              <p>تقليل أوقات التوقف المفاجئة وزيادة الإنتاجية</p>
+            </div>
+            <div class="box">
+              <img src="img/equipment.png" alt="Increase Equipment">
+              <h3>زيادة عمر المعدات والأداء</h3>
+              <p>حافظ على زيادة العمر الإفتراضي والآداء العالي للمعدات.</p>
             </div>
             <div class="box">
               <img src="img/saving.png" alt="Identify Energy Saving Opportunities">
-              <h3>تحديد فرص توفير الطاقة
-              </h3>
-              <p>ضمان التشغيل الآمن للمعدات وفقاً لمواصفات الشركة المصنعة
-              </p>
+              <h3>تحديد فرص توفير الطاقة </h3>
+              <p>ضمان التشغيل الآمن للمعدات وفق لمواصفات الشركات المصنعة.</p>
             </div>
             <div class="box">
               <img src="img/save-energy.png" alt="Protect the Environment">
-              <h3>حماية البيئة
-              </h3>
-              <p>القضاء على التسريبات له تأثير مباشر على ظاهرة الإحتباس الحراري.
-              </p>
+              <h3>حماية البيئة </h3>
+              <p>تقليل تسريب المبردات له تأثير مباشر على طبقة الأوزون وبالتالي على الإحتباس الحراري.
+                </p>
+            </div>
+            <div class="box">
+              <img src="img/management.png" alt="Building Management Solutions">
+              <h3>حلول إدارة المباني</h3>
+              <p>تقديم حلول كاملة لجميع المرافق</p>
             </div>
           </div>
         </div>
@@ -334,40 +459,39 @@
       <div class="features">
         <div class="container">
           <div class="top-header">
-            <h2>أكبر فريق لمحترفي خدمات ما بعد البيع!
-            </h2>
-          <p>
-            بدعم من أكبر منظمة عالمية للخدمات والتصنيع؛ يتبنى أكثر من <span class="houry">1500</span> مهندس وفني في جونسون كنترولز العربية نهجًا في تشغيل المباني بدقة وكفاءة.
-          </p>
+            <h2>أكبر فريق من محترفي خدمات ما بعد البيع!</h2>
+          <p>بدعم من أكبر منظمة عالمية للخدمات والتصنيع ؛ يتبنى أكثر من 1500 مهندس وفني لدينا نهجًا شاملاً لموثوقية تشغيل المبنى والكفاءة العالية  </p>
           </div>
           <div class="boxs">
             <div class="box">
               <img src="img/expertise.png" alt="Technical Expertise">
-              <h3>الخبرات التقنية
-              </h3>
-              <p>مهندسين وفنيين مدربين على نطاق واسع.
-              </p>
+              <h3>الخبراء التقنيين</h3>
+              <p>مهندسيين وفنيين على نطاق واسع</p>
             </div>
             <div class="box">
               <img src="img/spare-parts.png" alt="Genuine Spare Parts">
-              <h3>قطع غيار أصلية
-              </h3>
-              <p>ضمان وقت تشغيل أعلى للمعدات.
-              </p>
+              <h3>قطع غيار اصلية </h3>
+              <p>ضمان وقت اعلى للمعدات</p>
             </div>
             <div class="box">
               <img src="img/priority.png" alt="Priority Service">
-              <h3>خدمة الأولوية
-              </h3>
-              <p>الإلتزام بأوقات الإستجابة وأولوية الخدمة.
-              </p>
+              <h3>اولولية الخدمة </h3>
+              <p>الإلتزام بأوقات الإستجابة وخدمة الأولوية</p>
             </div>
             <div class="box">
               <img src="img/optimized-energy.png" alt="Optimized Energy Saving">
-              <h3>تحسين إعدادات توفير الطاقة الموسمية
-              </h3>
-              <p>فحص الأنظمة لتناسب المتطلبات الخاصة بالتالي توفير للطاقة.
-              </p>
+              <h3>تحسين توفير الطاقة والإعدادات الموسمية </h3>
+              <p>معايرة الأنظمة لتناسب المتطلبات، وبالتالي توفير للطاقة/p>
+            </div>
+            <div class="box">
+              <img src="img/satisfaction.png" alt="Guaranteed Customer Satisfaction">
+              <h3>ضمان إرضاء العميل</h3>
+              <p>المحافظة على إرضاء عملائنا طوال الوقت.</p>
+            </div>
+            <div class="box">
+              <img src="img/quality.png" alt="Internal Quality Audits">
+              <h3>تدقيق الجودة الداخلية</h3>
+              <p>ضمان تقديم افضل الخدمات من خلال الفحص المستمر للجودة.</p>
             </div>
           </div>
         </div>
@@ -379,31 +503,112 @@
       <div class="features">
         <div class="container">
           <div class="top-header">
-            <h2>عملائنا</h2>
-          <p>خدمة أفضل تبدأ من هنا!
-          </p>
+            <h2>عملائنا </h2>
+          <p>تمكين المشاريع المحلية والإقليمية</p>
           </div>
           <div class="customers">
-            <div class="customer">
-              <img src="img/york-black.png" alt="Technical Expertise">
+            <div class="custom">
+              <img src="img/makkah.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <ul>
+                    <li>- حلول تهوية وتدفئة وتبردة </li>
+                    <li>- نظام التحكم في التبريد</li>
+                    <li>- عقد تشغيل وصيانة</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="infoo">
+                
+              <p>المسجد الحرام (اكبر مبردات مستخدمة في العالم) </p>
+              <span>مكة</span>
+              </div>
             </div>
-            <div class="customer">
-              <img src="img/york-black.png" alt="Technical Expertise">
+            <div class="custom">
+              <img src="img/mosque-madinah.jpg" alt="The Holy Prophet’s Mosque Madinah" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <ul>
+                    <li>- حلول تهوية وتدفئة وتبردة </li>
+                    <li>- نظام التحكم في التبريد</li>
+                    <li>- عقد تشغيل وصيانة </li>
+                    <li>- التحكم في التعديل التحديثي</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="infoo">
+                
+                <p>المسجد النبوي </p>
+                <span>المدينة</span>
+              </div>
             </div>
-            <div class="customer">
-              <img src="img/york-black.png" alt="Technical Expertise">
+            <div class="custom">
+              <img src="img/clock-tower.jpg" alt="Clock Tower Makkah" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <ul>
+                   <li>- حلول تهوية وتدفئة وتبردة </li>
+                   <li>- نظام التحكم في التبريد </li>
+                   <li>- عقد تشغيل وصيانة</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="infoo">
+                
+                <p>برج الساعة </p>
+                <span>مكة</span>
+              </div>
             </div>
-            <div class="customer">
-              <img src="img/york-black.png" alt="Technical Expertise">
+            <div class="custom">
+              <img src="img/king-abdullah-financial.jpg" alt="King Abdullah Financial District Riydah" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <ul>
+                   <li>- حلول تهوية وتدفئة وتبردة</li>
+                   <li>- نظام متكامل لإدارة المباني </li>
+                   <li>- عقد خدمة </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="infoo">
+                
+                <p>مركز الملك عبدالله المالي </p>
+                <span>الرياض</span>
+              </div>
             </div>
-            <div class="customer">
-              <img src="img/york-black.png" alt="Technical Expertise">
+            <div class="custom">
+              <img src="img/princess-noura.jpg" alt="Princess Noura University Riydah" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <ul>
+                   <li>- حلول تهوية وتدفئة وتبردة</li>
+                   <li>- نظام التحكم في التبريد</li>
+                   <li>- عقد تشغيل وصيانة </li>
+                   <li>- التحكم في التعديل التحديثي</li>
+                   <li>- عقد خدمة BMS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="infoo">
+                
+                <p>جامعة الأميرة نورة </p>
+                <span>الرياض</span>
+              </div>
             </div>
-            <div class="customer">
-              <img src="img/york-black.png" alt="Technical Expertise">
-            </div>
-            <div class="customer">
-              <img src="img/york-black.png" alt="Technical Expertise">
+            <div class="custom">
+              <img src="img/king-abdulaziz.jpg" alt="King Abdulaziz International Airport" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <ul>
+                   <li>- عقد تشغيل وصيانة </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="infoo">
+                
+                <p>مطار الملك عبدالعزيز الدولي</p>
+                <span>جدة </span>
+              </div>
             </div>
           </div>
         </div>
@@ -428,6 +633,125 @@
       <!-- End Footer -->
 </div>
 
-    <script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="main.js"></script>
+<script>
+  (function($) {
+var CheckboxDropdown = function(el) {
+var _this = this;
+this.isOpen = false;
+this.areAllChecked = false;
+this.$el = $(el);
+this.$label = this.$el.find('.dropdown-label');
+this.$checkAll = this.$el.find('[data-toggle="check-all"]').first();
+this.$inputs = this.$el.find('[type="checkbox"]');
+
+this.onCheckBox();
+
+this.$label.on('click', function(e) {
+  e.preventDefault();
+  _this.toggleOpen();
+});
+
+this.$checkAll.on('click', function(e) {
+  e.preventDefault();
+  _this.onCheckAll();
+});
+
+this.$inputs.on('change', function(e) {
+  _this.onCheckBox();
+});
+};
+
+CheckboxDropdown.prototype.onCheckBox = function() {
+this.updateStatus();
+};
+
+CheckboxDropdown.prototype.updateStatus = function() {
+var checked = this.$el.find(':checked');
+
+this.areAllChecked = false;
+this.$checkAll.html('Check All');
+
+if(checked.length <= 0) {
+  this.$label.html('Select Options');
+}
+else if(checked.length === 1) {
+  this.$label.html(checked.parent('label').text());
+}
+else if(checked.length === this.$inputs.length) {
+  this.$label.html('All Selected');
+  this.areAllChecked = true;
+  this.$checkAll.html('Uncheck All');
+}
+else {
+  this.$label.html(checked.length + ' Selected');
+}
+};
+
+CheckboxDropdown.prototype.onCheckAll = function(checkAll) {
+if(!this.areAllChecked || checkAll) {
+  this.areAllChecked = true;
+  this.$checkAll.html('Uncheck All');
+  this.$inputs.prop('checked', true);
+}
+else {
+  this.areAllChecked = false;
+  this.$checkAll.html('Check All');
+  this.$inputs.prop('checked', false);
+}
+
+this.updateStatus();
+};
+
+CheckboxDropdown.prototype.toggleOpen = function(forceOpen) {
+var _this = this;
+
+if(!this.isOpen || forceOpen) {
+   this.isOpen = true;
+   this.$el.addClass('on');
+  $(document).on('click', function(e) {
+    if(!$(e.target).closest('[data-control]').length) {
+     _this.toggleOpen();
+    }
+  });
+}
+else {
+  this.isOpen = false;
+  this.$el.removeClass('on');
+  $(document).off('click');
+}
+};
+
+var checkboxesDropdowns = document.querySelectorAll('[data-control="checkbox-dropdown"]');
+for(var i = 0, length = checkboxesDropdowns.length; i < length; i++) {
+new CheckboxDropdown(checkboxesDropdowns[i]);
+}
+})(jQuery);
+
+
+function yesnoCheck(that) 
+{
+if (that.value == "other") 
+{
+    document.getElementById("otherOne").style.display = "block";
+}
+else
+{
+    document.getElementById("otherOne").style.display = "none";
+}
+}
+function yesnoCheck1(that) 
+{
+if (that.value == "other") 
+{
+    document.getElementById("otherOne1").style.display = "block";
+}
+else
+{
+    document.getElementById("otherOne1").style.display = "none";
+}
+}
+</script>
   </body>
 </html>
