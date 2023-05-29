@@ -95,13 +95,15 @@
                   <input type="text" placeholder="Ali" required />
                 </div>
               </div>
-              <div class="input-box">
-                <p>Email</p>
-                <input type="email" placeholder="mohamed@jci.com" required />
-              </div>
-              <div class="input-box">
-                <p>Mobile Number</p>
-                <input type="number" placeholder="0123456789" required />
+              <div class="combin">
+                <div class="input-box">
+                  <p>Email</p>
+                  <input type="email" placeholder="mohamed@jci.com" required />
+                </div>
+                <div class="input-box">
+                  <p>Mobile Number</p>
+                  <input type="number" placeholder="0123456789" required />
+                </div>
               </div>
               <div class="combin">
                 <div class="form-groups">
@@ -119,6 +121,71 @@
                     <option selected="selected" disabled="">City</option>
                   </select>
                 </div>
+              </div>
+              <div class="form-groups">
+                <p>Type of Equipment (Multiple Selections) </p>
+                <div class="dropdown" data-control="checkbox-dropdown">
+                  <label class="dropdown-label">Select</label>
+                  
+                  <div class="dropdown-list">
+                    <label class="dropdown-option">
+                      <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                      Air Cooled Chillers
+                    </label>
+                    
+                    <label class="dropdown-option">
+                      <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                      Water Cooled Chillers
+                    </label>
+                    
+                    <label class="dropdown-option">
+                      <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                      AHUs / FCUs
+                    </label>
+                    
+                    <label class="dropdown-option">
+                      <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                      Packaged Units
+                    </label>
+                    
+                    <label class="dropdown-option">
+                      <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                      Ducted Split Units
+                    </label>  
+                    <label class="dropdown-option">
+                      <input type="checkbox" name="dropdown-group" value="Selection 6" />
+                      Mini Split Units (Wall Mounted/ Free Stand/ Cassette Type)
+                    </label>      
+                  </div>
+                  </div>
+              </div>
+              <div class="form-groups">
+                <p>Equipment Brand</p>
+                <div>
+                  <select id="selector1" onchange="yesnoCheck1(this);">
+                    <option selected="selected" disabled="">
+                      Equipment Brand
+                    </option>
+                    <option value="york">YORK</option>
+                    <option value="other">Other - Please Specify </option>
+                </select>
+                </div>
+            
+            <div id="otherOne1" style="display: none;">
+                <!-- <label for="other">Please Specify</label> 
+                <input type="text" id="aadhar" name="Please Specify" /><br /> -->
+
+                <div class="form-groups down-tp">
+                  <div class="input-box">
+                    <p>Please Specify</p>
+                    <input
+                      type="text"
+                      placeholder="Please Specify"
+                      required
+                    />
+                  </div>
+                </div>
+            </div>
               </div>
               <div class="form-groups">
                 <p>Preferred Time to Call?</p>
@@ -173,17 +240,19 @@
                       <input type="text" placeholder="Ali" required />
                     </div>
                   </div>
-                  <div class="input-box">
-                    <p>Email</p>
-                    <input
-                      type="email"
-                      placeholder="mohamed@jci.com"
-                      required
-                    />
-                  </div>
-                  <div class="input-box">
-                    <p>Mobile Number</p>
-                    <input type="number" placeholder="0123456789" required />
+                  <div class="combin">
+                    <div class="input-box">
+                      <p>Email</p>
+                      <input
+                        type="email"
+                        placeholder="mohamed@jci.com"
+                        required
+                      />
+                    </div>
+                    <div class="input-box">
+                      <p>Mobile Number</p>
+                      <input type="number" placeholder="0123456789" required />
+                    </div>
                   </div>
                   <div class="combin">
                     <div class="form-groups">
@@ -202,6 +271,73 @@
                       </select>
                     </div>
                   </div>
+
+                  <div class="form-groups">
+                    <p>Type of Equipment (Multiple Selections) </p>
+                    <div class="dropdown" data-control="checkbox-dropdown">
+                      <label class="dropdown-label">Select</label>
+                      
+                      <div class="dropdown-list">
+                        <label class="dropdown-option">
+                          <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                          Air Cooled Chillers
+                        </label>
+                        
+                        <label class="dropdown-option">
+                          <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                          Water Cooled Chillers
+                        </label>
+                        
+                        <label class="dropdown-option">
+                          <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                          AHUs / FCUs
+                        </label>
+                        
+                        <label class="dropdown-option">
+                          <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                          Packaged Units
+                        </label>
+                        
+                        <label class="dropdown-option">
+                          <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                          Ducted Split Units
+                        </label>  
+                        <label class="dropdown-option">
+                          <input type="checkbox" name="dropdown-group" value="Selection 6" />
+                          Mini Split Units (Wall Mounted/ Free Stand/ Cassette Type)
+                        </label>      
+                      </div>
+                      </div>
+                  </div>
+                  <div class="form-groups">
+                    <p>Equipment Brand</p>
+                    <div>
+                      <select id="selector" onchange="yesnoCheck(this);">
+                        <option selected="selected" disabled="">
+                          Equipment Brand
+                        </option>
+                        <option value="york">YORK</option>
+                        <option value="other">Other - Please Specify </option>
+                    </select>
+                    </div>
+                
+                <div id="otherOne" style="display: none;">
+                    <!-- <label for="other">Please Specify</label> 
+                    <input type="text" id="aadhar" name="Please Specify" /><br /> -->
+
+                    <div class="form-groups down-tp">
+                      <div class="input-box">
+                        <p>Please Specify</p>
+                        <input
+                          type="text"
+                          placeholder="Please Specify"
+                          required
+                        />
+                      </div>
+                    </div>
+                </div>
+                  </div>
+
                   <div class="form-groups">
                     <p>Preferred Time to Call?</p>
                     <select class="form-control" id="call">
@@ -225,59 +361,104 @@
       </div>
     </div>
     <!-- End Hero -->
-
-    <!-- History -->
-    <div class="history">
-      <div class="container">
-        <div class="histy">
-          <div class="his-info">
-            <div>
-              <h2>Planned Service Agreement </h2>
-            <h4>HVAC Operations, Maintenance, and Repair Services</h4>
-            <p>
-              Our Operations & Maintenance Contracts are carefully designed to optimize the latest in-service technology to ensure positive impact on multiple aspects of operation.  
-            </p>
-            
-            </div>
-            <div class="features">
-              <div class="planned">
-                <h4>Planned Service Agreements</h4>
-                <h4>Types of Contracts: </h4>
-              </div>
+      <!-- History -->
+      <div class="history">
+        <div class="container">
+          <div class="histy">
+            <div class="his-info">
               <div>
-                <div class="boxs boxy">
-                  <div class="box">
-                    <h3>1- Preventive Maintenance Contracts: 
-                    </h3>
-                    <p>TOur expert team of technicians and engineers will afford you professional periodic preventive maintenance works to ensure performance stability, improved indoor air quality, energy savings and sustainability.  
-                    </p>
-                  </div>
-                  <div class="box">
-                    <h3>2- Operation and Maintenance Contracts: 
-                    </h3>
-                    <p>Our service team are stationed on-site, in shifts or around the clock; to operate and monitor the system and provide preventive maintenance  to ensure proper operation, reduce breakdowns and increase life span of your expensive and critical equipment. 
-                    </p>
-                  </div>
-                  <div class="box">
-                    <h3>3- Comprehensive Maintenance Contracts: 
-                    </h3>
-                    <p>This contract model is customized to cover preventive and corrective maintenance, labor, spare parts and consumables. 
-                    </p>
+                <h2>Planned Service Agreements </h2>
+              <h4>HVAC Operations, Maintenance, and Repair Services</h4>
+              <p>
+                Our Operations & Maintenance Contracts are carefully designed to optimize the latest in-service technology to ensure positive impact on multiple aspects of operation.  
+              </p>
+              
+              </div>
+              <div class="features">
+                <div class="planned">
+                  <h4>We offer the following Maintenance Service Agreements: </h4>
+                </div>
+                <div>
+                  <div class="boxs boxy">
+                    <div class="box">
+                      <h3>1- Preventive Maintenance Contracts: 
+                      </h3>
+                      <p>Our expert team of technicians and engineers will offer you professional periodic preventive maintenance works to ensure performance stability, improved indoor air quality, energy savings and sustainability.  
+                      </p>
+                    </div>
+                    <div class="box">
+                      <h3>2- Operation and Maintenance Contracts: 
+                      </h3>
+                      <p>Our service team are stationed on-site, in shifts or around the clock; to operate and monitor the system and provide preventive maintenance  to ensure proper operation, reduce breakdowns and increase life span of your expensive and critical equipment. 
+                      </p>
+                    </div>
+                    <div class="box">
+                      <h3>3- Comprehensive Maintenance Contracts: 
+                      </h3>
+                      <p>This contract model is customized to cover preventive and corrective maintenance, labor, spare parts and consumables. 
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="his-img">
+              <img
+                src="img/range-of-services.jpg"
+                alt="Full Range of Services"
+              />
+            </div>
           </div>
-          <div class="his-img">
-            <img
-              src="img/range-of-services.jpg"
-              alt="Full Range of Services"
-            />
+          
+        </div>
+      </div>
+
+    <div class="features">
+      <div class="container">
+        <div class="top-header">
+          <h2>We Manage and Protect Facilities</h2>
+          <h3>Why Planned Service Agreements?</h3>
+        <p>With our comprehensive array of individual and packaged offerings, Johnson Controls Arabia can tailor class-leading commercial services to precise requirements and budgets.</p>
+        </div>
+        <div class="boxs">
+          
+          <div class="box">
+            <img src="img/reduce-cost.png" alt="Reduce Unplanned Repair Cost">
+            <h3>Reduce Unplanned Repair Cost</h3>
+            <p>Steady Service improves Equipment Reliability and Extends Equipment Life</p>
+          </div>
+          <div class="box">
+            <img src="img/up-time.png" alt="Minimize Down Time ">
+            <h3>Minimize Down Time</h3>
+            <p>Reduce unscheduled Downtimes and Increase Productivity</p>
+          </div>
+          <div class="box">
+            <img src="img/equipment.png" alt="Increase Equipment">
+            <h3>Increase Equipment Lifetime and Performance</h3>
+            <p>Keep Equipment in high performance and increase lifetime</p>
+          </div>
+          <div class="box">
+            <img src="img/saving.png" alt="Identify Energy Saving Opportunities">
+            <h3>Identify Energy Saving Opportunities</h3>
+            <p>Ensure safe operations of Equipment according to Manufacturers Specifications</p>
+          </div>
+          <div class="box">
+            <img src="img/save-energy.png" alt="Protect the Environment">
+            <h3>Protect the Environment</h3>
+            <p>Reducing Refrigerant Leaks has a direct impact on the Ozone Layer and Subsequently 
+              on the Global Warming
+              </p>
+          </div>
+          <div class="box">
+            <img src="img/management.png" alt="Building Management Solutions">
+            <h3>Building Management Solutions</h3>
+            <p>Provide full solution for building facilities</p>
           </div>
         </div>
-        
       </div>
     </div>
+
+  
 
     <!-- Features -->
     <div class="features">
@@ -320,48 +501,7 @@
         </div>
       </div>
     </div>
-    <div class="features">
-      <div class="container">
-        <div class="top-header">
-          <h2>We Manage and Protect Facilities</h2>
-        <p>With our comprehensive array of individual and packaged offerings, Johnson Controls Arabia can tailor class-leading commercial services to precise requirements and budgets.</p>
-        </div>
-        <div class="boxs">
-          <div class="box">
-            <img src="img/management.png" alt="Building Management Solutions">
-            <h3>Building Management Solutions</h3>
-            <p>Provide full solution for building facilities</p>
-          </div>
-          <div class="box">
-            <img src="img/reduce-cost.png" alt="Reduce Unplanned Repair Cost">
-            <h3>Reduce Unplanned Repair Cost</h3>
-            <p>Steady Service improves Equipment Reliability and Extends Equipment Life</p>
-          </div>
-          <div class="box">
-            <img src="img/up-time.png" alt="Minimize Down Time ">
-            <h3>Minimize Down Time</h3>
-            <p>Reduce unscheduled Downtimes and Increase Productivity</p>
-          </div>
-          <div class="box">
-            <img src="img/equipment.png" alt="Increase Equipment">
-            <h3>Increase Equipment Lifetime and Performance</h3>
-            <p>Keep Equipment in high performance and increase lifetime</p>
-          </div>
-          <div class="box">
-            <img src="img/saving.png" alt="Identify Energy Saving Opportunities">
-            <h3>Identify Energy Saving Opportunities</h3>
-            <p>Ensure safe operations of Equipment according to Manufacturers Specifications</p>
-          </div>
-          <div class="box">
-            <img src="img/save-energy.png" alt="Protect the Environment">
-            <h3>Protect the Environment</h3>
-            <p>Reducing Refrigerant Leaks has a direct impact on the Ozone Layer and Subsequently 
-              on the Global Warming
-              </p>
-          </div>
-        </div>
-      </div>
-    </div>
+   
 
 
     <!-- End Features -->
@@ -462,6 +602,21 @@
               <span>Riydah</span>
             </div>
           </div>
+          <div class="custom">
+            <img src="img/king-abdulaziz.jpg" alt="King Abdulaziz International Airport" class="image">
+            <div class="overlay">
+              <div class="text">
+                <ul>
+                 <li>- Operation and Maintenance Contract</li>
+                </ul>
+              </div>
+            </div>
+            <div class="infoo">
+              
+              <p>King Abdulaziz International Airport</p>
+              <span>Jeddah</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -478,13 +633,132 @@
     <!-- Footer -->
     <div class="footer">
       <p>
-        © <span class="year"></span> Johnson Controls Arabia. Al rights
+        © <span class="year"></span> Johnson Controls Arabia. All rights
         reserved.
       </p>
     </div>
 
     <!-- End Footer -->
-
+  <!-- scripts -->  
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="main.js"></script>
+    <script>
+      (function($) {
+  var CheckboxDropdown = function(el) {
+    var _this = this;
+    this.isOpen = false;
+    this.areAllChecked = false;
+    this.$el = $(el);
+    this.$label = this.$el.find('.dropdown-label');
+    this.$checkAll = this.$el.find('[data-toggle="check-all"]').first();
+    this.$inputs = this.$el.find('[type="checkbox"]');
+    
+    this.onCheckBox();
+    
+    this.$label.on('click', function(e) {
+      e.preventDefault();
+      _this.toggleOpen();
+    });
+    
+    this.$checkAll.on('click', function(e) {
+      e.preventDefault();
+      _this.onCheckAll();
+    });
+    
+    this.$inputs.on('change', function(e) {
+      _this.onCheckBox();
+    });
+  };
+  
+  CheckboxDropdown.prototype.onCheckBox = function() {
+    this.updateStatus();
+  };
+  
+  CheckboxDropdown.prototype.updateStatus = function() {
+    var checked = this.$el.find(':checked');
+    
+    this.areAllChecked = false;
+    this.$checkAll.html('Check All');
+    
+    if(checked.length <= 0) {
+      this.$label.html('Select Options');
+    }
+    else if(checked.length === 1) {
+      this.$label.html(checked.parent('label').text());
+    }
+    else if(checked.length === this.$inputs.length) {
+      this.$label.html('All Selected');
+      this.areAllChecked = true;
+      this.$checkAll.html('Uncheck All');
+    }
+    else {
+      this.$label.html(checked.length + ' Selected');
+    }
+  };
+  
+  CheckboxDropdown.prototype.onCheckAll = function(checkAll) {
+    if(!this.areAllChecked || checkAll) {
+      this.areAllChecked = true;
+      this.$checkAll.html('Uncheck All');
+      this.$inputs.prop('checked', true);
+    }
+    else {
+      this.areAllChecked = false;
+      this.$checkAll.html('Check All');
+      this.$inputs.prop('checked', false);
+    }
+    
+    this.updateStatus();
+  };
+  
+  CheckboxDropdown.prototype.toggleOpen = function(forceOpen) {
+    var _this = this;
+    
+    if(!this.isOpen || forceOpen) {
+       this.isOpen = true;
+       this.$el.addClass('on');
+      $(document).on('click', function(e) {
+        if(!$(e.target).closest('[data-control]').length) {
+         _this.toggleOpen();
+        }
+      });
+    }
+    else {
+      this.isOpen = false;
+      this.$el.removeClass('on');
+      $(document).off('click');
+    }
+  };
+  
+  var checkboxesDropdowns = document.querySelectorAll('[data-control="checkbox-dropdown"]');
+  for(var i = 0, length = checkboxesDropdowns.length; i < length; i++) {
+    new CheckboxDropdown(checkboxesDropdowns[i]);
+  }
+})(jQuery);
+
+
+function yesnoCheck(that) 
+{
+    if (that.value == "other") 
+    {
+        document.getElementById("otherOne").style.display = "block";
+    }
+    else
+    {
+        document.getElementById("otherOne").style.display = "none";
+    }
+}
+function yesnoCheck1(that) 
+{
+    if (that.value == "other") 
+    {
+        document.getElementById("otherOne1").style.display = "block";
+    }
+    else
+    {
+        document.getElementById("otherOne1").style.display = "none";
+    }
+}
+    </script>
   </body>
 </html>
