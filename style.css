@@ -1148,7 +1148,8 @@ input[type="number"] {
   font-family: "GE-Dinar-One-Bold" !important;
 }
 .nav .info .ara a, .ar .req, .thankYou.ar .details .side-info .info h1, .ar .side-form .pop-content .form-groups select,
-.ar .side-form .pop-content .form-groups select option  {
+.ar .side-form .pop-content .form-groups select option,
+.ar .side-form .pop-content .input-boxs .send  {
   font-family: "GE-Dinar-One-Bold" !important;
 }
 .ar .nav .info a, .houry {
