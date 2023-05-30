@@ -13,7 +13,7 @@ window.onscroll = function () {
         navbar.classList.add("scrolled");
         logo.setAttribute("src", "img/logo.png")
         req.style.color = "#fff"
-        req.style.background = "#00539e"
+        req.style.background = "#152EA9"
         lang.style.color = "#151515"
         function myFunction(x) {
             if (x.matches) {
