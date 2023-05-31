@@ -534,7 +534,7 @@ a {
   }
   .features .customers {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
   .features .top-header p {
     width: 100%;
@@ -1150,14 +1150,16 @@ input[type="number"] {
 .nav .info .ara a, .ar .req, .thankYou.ar .details .side-info .info h1, .ar .side-form .pop-content .form-groups select,
 .ar .side-form .pop-content .form-groups select option,
 .ar .side-form .pop-content .input-boxs .send,
-.ar .pop-form .pop-content .input-boxs .send  {
+.ar .pop-form .pop-content .input-boxs .send,
+.ar .customers .custom span  {
   font-family: "GE-Dinar-One-Bold" !important;
 }
 .ar .nav .info a, .houry {
   font-family: "Maurea-BoldLf";
 }
 .ar .features .boxs .box p, .ar .features .top-header p,
-.ar .history .histy .his-info p, .thankYou.ar .details .side-info h3 {
+.ar .history .histy .his-info p, .thankYou.ar .details .side-info h3,
+.ar .history .histy .features .planned h4:first-child{
   font-family: "GE-Dinar-One-Medium" !important;
 }
 .ar .nav .info {
@@ -1271,6 +1273,9 @@ input[type="number"] {
   .customers .custom p,
   .customers .text {
     font-size: 11px;
+  }
+  .customers .text ul li{
+    font-size: 12px;
   }
 }
 
