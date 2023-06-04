@@ -1151,11 +1151,16 @@ input[type="number"] {
 .ar .side-form .pop-content .form-groups select option,
 .ar .side-form .pop-content .input-boxs .send,
 .ar .pop-form .pop-content .input-boxs .send,
-.ar .customers .custom span  {
+.ar .customers .custom span {
   font-family: "GE-Dinar-One-Bold" !important;
 }
-.ar .nav .info a, .houry {
-  font-family: "Maurea-BoldLf";
+.ar .nav .info a, .houry,
+.ar .side-form .pop-content .form-groups #call,
+.ar .side-form .pop-content .form-groups #call option {
+  font-family: "Maurea-BoldLf" !important;
+}
+.ar .side-form .pop-content .form-groups #call option.chs {
+  font-family: "GE-Dinar-One-Bold" !important;
 }
 .ar .features .boxs .box p, .ar .features .top-header p,
 .ar .history .histy .his-info p, .thankYou.ar .details .side-info h3,
